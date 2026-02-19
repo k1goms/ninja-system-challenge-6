@@ -6,6 +6,7 @@ import model.Ninja;
 import model.NinjaDTO;
 import util.SampleData;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.stream.Collectors;
 
 public final class NinjaService {
@@ -67,12 +68,11 @@ public final class NinjaService {
         return new NinjaDTO(ninjaList.get(index));
     }
 
-    public LinkedList<NinjaDTO> getAllNinjas() {
+    public List<NinjaDTO> getAllNinjas() {
         return ninjaList.stream()
                 .map(NinjaDTO::new)
-                .collect(Collectors.toCollection(LinkedList::new));
+                .toList();
     }
-
 
     public void sortListByAttribute(SortOption sortOption) {
         checkNinjaListState();
