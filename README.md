@@ -134,5 +134,4 @@ O sistema inicia com ninjas pré-carregados:
 ## 👨‍💻 Autor
 
 Kauã Gomes  
-Estudante de Análise e Desenvolvimento de Sistemas  
-Foco atual: Java
+Desenvolvedor Back-End Java  
